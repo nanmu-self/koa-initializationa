@@ -1,89 +1,89 @@
-# Koa CLI Generator
+# Koa CLI 生成器
 
-A command-line tool for generating Koa.js project scaffolds, similar to vue-cli.
+一个用于生成 Koa.js 项目脚手架的命令行工具，类似于 vue-cli。
 
-## Features
+## 功能特性
 
-- 🚀 Quick project scaffolding
-- 📦 Multiple project templates (basic, API, fullstack)
-- 🔧 Configurable feature modules
-- 📝 TypeScript support
-- 🎯 Interactive CLI prompts
-- 🔄 Automatic dependency management
-- 📋 Configuration file support
+- 🚀 快速项目脚手架
+- 📦 多种项目模板（基础版、API 版、全栈版）
+- 🔧 可配置的功能模块
+- 📝 支持 TypeScript
+- 🎯 交互式 CLI 提示
+- 🔄 自动依赖管理
+- 📋 支持配置文件
 
-## Installation
+## 安装
 
 ```bash
 npm install -g koa-cli-generator
 ```
 
-## Usage
+## 使用方法
 
-### Create a new project
+### 创建新项目
 
 ```bash
 koa create my-project
 ```
 
-### Create with specific template
+### 使用特定模板创建
 
 ```bash
 koa create my-api --template api
 ```
 
-### Create with configuration file
+### 使用配置文件创建
 
 ```bash
 koa create my-project --config koa.config.json
 ```
 
-### Update CLI and templates
+### 更新 CLI 和模板
 
 ```bash
 koa update
 ```
 
-### Show version information
+### 显示版本信息
 
 ```bash
 koa version
 ```
 
-## Development
+## 开发
 
-### Setup
+### 设置
 
 ```bash
-# Install dependencies
+# 安装依赖
 npm install
 
-# Build the project
+# 构建项目
 npm run build
 
-# Run in development mode
+# 开发模式运行
 npm run dev
 
-# Run tests
+# 运行测试
 npm test
 
-# Run linting
+# 运行代码检查
 npm run lint
 ```
 
-### Project Structure
+### 项目结构
 
 ```
 src/
-├── cli.ts              # CLI entry point
-├── index.ts            # Main export file
-├── types/              # TypeScript type definitions
-├── commands/           # Command handlers
-├── utils/              # Utility functions
-├── core/               # Core business logic
-└── test/               # Test setup and utilities
+├── cli.ts              # CLI 入口文件
+├── index.ts            # 主要导出文件
+├── types/              # TypeScript 类型定义
+├── commands/           # 命令处理器
+├── utils/              # 工具函数
+├── core/               # 核心业务逻辑
+└── test/               # 测试设置和工具
 ```
 
-## License
+## 许可证
 
 MIT
