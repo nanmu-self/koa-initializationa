@@ -42,7 +42,7 @@ program
 program
   .command('create <project-name>')
   .description('创建一个新的 Koa.js 项目')
-  .option('-t, --template <template>', '项目模板 (basic, api, fullstack)', 'basic')
+  .option('-t, --template <template>', '项目模板 (basic, api, fullstack)')
   .option('-c, --config <config>', '配置文件路径 (支持 JSON 和 YAML 格式)')
   .option('--skip-install', '跳过依赖安装')
   .option('--package-manager <manager>', '指定包管理器 (npm, yarn, pnpm)')
