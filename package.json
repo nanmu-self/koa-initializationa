@@ -1,0 +1,55 @@
+{
+  "name": "koa-cli-generator",
+  "version": "1.0.0",
+  "description": "A CLI tool for generating Koa.js project scaffolds",
+  "main": "dist/index.js",
+  "bin": {
+    "koa": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "koa",
+    "cli",
+    "generator",
+    "scaffold",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^14.0.2",
+    "inquirer": "^13.1.0",
+    "handlebars": "^4.7.8",
+    "fs-extra": "^11.3.3",
+    "chalk": "^5.6.2",
+    "ora": "^9.0.0",
+    "simple-git": "^3.30.0",
+    "semver": "^7.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/inquirer": "^9.0.9",
+    "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.51.0",
+    "@typescript-eslint/parser": "^8.51.0",
+    "eslint": "^9.39.2",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "rimraf": "^6.1.2",
+    "fast-check": "^4.5.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
