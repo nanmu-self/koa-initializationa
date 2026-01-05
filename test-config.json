@@ -1,0 +1,12 @@
+{
+  "template": "api",
+  "typescript": true,
+  "packageManager": "yarn",
+  "features": {
+    "logging": true,
+    "cors": true,
+    "helmet": true,
+    "swagger": true,
+    "redis": false
+  }
+}
